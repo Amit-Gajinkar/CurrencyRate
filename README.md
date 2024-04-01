@@ -11,9 +11,12 @@ Following are the requirements to setup this project on your system:
 5. Reload project from POM.XML - Right click on Pom.xml -> On context menu go to Maven -> Select Reload project
 
 Project structure -
-             src-->test-->Java--> resources--> data(This folder contains all the data files which are being used by framework)--> currency.json (This file holds a list of all the currencies).
-             src-->test-->Java--> resources-->--> features(This folder contains all the features and their respective test runner files)--> exchange-rate.feature & TestRunner.
-             src-->test-->Java-->--> karate-config.js --> This file is used whenever we have central properties or JavaScript functions that should be reused across multiple scenarios.
-             src-->test-->Java-->--> logback-test.xml --> This is the main configuration file for Karate’s logging.
-             pom.xml-->  This is the main Maven configuration that includes dependencies to different libraries, configuration information, and build plugins.
-             target--> This folder holds the test result file (e.g. resources.features.exchange-rate.html) for the execution under karate-reports subfolder.
+
+1. src-->test-->Java--> resources--> data(This folder contains all the data files which are being used by framework)--> currency.json (This file holds a list of all the currencies).
+2. src-->test-->Java--> resources-->--> features(This folder contains all the features and their respective test runner files)--> exchange-rate.feature & TestRunner.
+3. src-->test-->Java-->--> karate-config.js --> This file is used whenever we have central properties or JavaScript functions that should be reused across multiple scenarios.
+4. src-->test-->Java-->--> logback-test.xml --> This is the main configuration file for Karate’s logging.
+5. pom.xml-->  This is the main Maven configuration that includes dependencies to different libraries, configuration information, and build plugins.
+6. target--> This folder holds the test result file (e.g. resources.features.exchange-rate.html) for the execution under karate-reports subfolder. 
+
+Test Execution - Tests can be executed by going into TestRunner file and then clicking on Run button present on top of the IDE. Tests matching with specified tags will be running and excution can be seen in the TestRunner console.
